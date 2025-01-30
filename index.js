@@ -69,16 +69,8 @@ app.post('/submitHelpRequest', (req, res) => {
       // Return as JSON response
       return res.status(500).json({ success: false, message: 'Database insertion failed.' });
     }
-    // After inserting, use fetch all help requests in order to display to helprequests.ejs
-    db.all('SELECT * FROM help_requests', (err, rows) => {
-      if (err) {
-        console.error('Error retrieving data:', err.message);
-        // Return error as JSON
-        return res.status(500).json({ success: false, message: 'Database query failed.' });
-      }
       // Return success response as JSON
       return res.status(200).json({ success: true, message: 'Form submitted successfully!' });
-    });
   });
 });
 
