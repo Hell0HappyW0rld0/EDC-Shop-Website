@@ -1,0 +1,37 @@
+[
+    {
+        "id": "product1",
+        "name": "Pocket-Sized Titanium Fire Starter",
+        "price": 19.99,
+        "img": "product1.jpg",
+        "description": "Be ready for any adventure with this lightweight titanium fire starter. Featuring a waterproof tinder compartment and ferro rod, it's perfect for camping or emergencies. Attach it to your keychain and stay prepared anywhere."
+    },
+    {
+        "id": "product2",
+        "name": "Multi-Function Smart Wallet",
+        "price": 49.99,
+        "img": "product2.jpg",
+        "description": "This sleek RFID-blocking wallet includes a pop-up card holder, built-in power bank, and a tracker to prevent loss. Stylish and functional, it's a must-have for tech-savvy professionals."
+    },
+    {
+        "id": "product3",
+        "name": "Mini EDC Screwdriver Kit",
+        "price": 34.99,
+        "img": "product3.jpg",
+        "description": "Compact and convenient, this mini screwdriver kit comes with 10 precision bits for quick fixes on the go. Its keychain design makes it easy to carry anywhere."
+    },
+    {
+        "id": "product4",
+        "name": "Self-Defense Tactical Pen",
+        "price": 24.99,
+        "img": "product4.jpg",
+        "description": "This durable aluminum pen doubles as a glass breaker and self-defense tool, making it practical and protective. Sleek and discreet, it's perfect for everyday carry."
+    },
+    {
+        "id": "product5",
+        "name": "Magnetic Modular Key Organizer",
+        "price": 89.99,
+        "img": "product5.jpg",
+        "description": "Keep your keys and tools organized with this slim, magnetic modular key holder. Durable and stylish, it's perfect for a clutter-free pocket."
+    }
+]
