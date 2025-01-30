@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- About Page -->
+
+<head>
+    <!-- Responsive approach for mobile -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="author" content="Ha An Ng">
+    <meta name="description" content="About Page">
+    <title>EDC About Page</title>
+
+    <!-- CSS styling with Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="web.css">
+    </style>
+
+    <!-- JavaScript file -->
+    <script src="web.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Area -->
+    <div class="sticky-wrapper">
+        <nav id="stickyNavbar" class="navbar navbar-expand-lg bg-primary text-white p-3 sticky-top"
+            data-bs-theme="dark">
+            <div class="container d-flex justify-content-between align-items-center sticky-top">
+                <!-- Logo and name -->
+                <a class="navbar-brand text-white" href="index.html">
+                    <img src="templogo.webp" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                    EDC Shop
+                </a>
+
+                <!-- Hamburgur nav toggler for when screen size is small -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="toggleNavigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Subcategories -->
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <!-- A way to get the subcategories to align properly to center, TOFIX: -->
+                    <ul class="navbar-nav me-auto"></ul>
+                    <!-- Flex container, center subcategories (Browse and Help) -->
+                    <ul class="navbar-nav mx-auto d-flex justify-content-center mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="help.html">Help</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="about.html">About Us</a>
+                        </li>
+                    </ul>
+
+                    <!-- Right-aligned subcategories (Account and Cart) -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="account.html">Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" data-bs-toggle="offcanvas"
+                                data-bs-target="#cartOffcanvas" aria-controls="staticBackdrop"> Cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Title -->
+    <header>
+        <div class="container-fluid bg-info-subtle">
+            <div class="col-sm-8 mx-auto text-center py-5">
+                <h1 class="display-1">EDC Shop</h1>
+                <!-- Short description of the company -->
+                <p class="lead ">An online shop with a wide range of electronics accessories and EDC gadgets, from
+                    phone and laptop accessories to everyday carry tools. We provide practical and fun products to
+                    enhance your tech experience and simplify your daily life.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <!-- Mission & Values Section -->
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <h1>Our Mission</h1>
+                        <p>Our mission is to provide practical, innovative, and fun products that help tech enthusiasts
+                            and professionals stay organized and efficient. We believe in delivering value through
+                            quality, functionality, and design.</p>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h1>Why Choose Us?</h1>
+                        <p>We handpick every product to ensure it meets the highest standards of quality and
+                            performance. Our customers trust us for the latest trends in tech accessories, and we are
+                            committed to offering them at affordable prices.</p>
+                    </div>
+                </div>
+
+                <!-- Partners Section -->
+                <h1>Meet Our Partners</h1>
+                <div class="row container mt-4">
+                    <div class="col-sm-4 mb-4 d-flex">
+                        <div class="card flex-fill">
+                            <img src="techedge-solutions.png" class="card-img-top p-2" alt="TechEdge Solutions Logo">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">TechEdge Solutions</h5>
+                                <p class="card-text">
+                                    TechEdge Solutions is known for their sleek, durable phone
+                                    accessories that combine style with functionality. Their charging cables, wireless
+                                    chargers, and cases are designed for the modern tech user.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 mb-4 d-flex">
+                        <div class="card flex-fill">
+                            <img src="gearup-labs.jpg" class="card-img-top p-2" alt="GearUp Labs Logo">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">GearUp Labs</h5>
+                                <p class="card-text">
+                                    GearUp Labs specializes in premium EDC gear, offering a variety of
+                                    multi-tools, tactical gadgets, and keychain accessories. Their products are built to
+                                    last and made for everyday use.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 mb-4 d-flex">
+                        <div class="card flex-fill">
+                            <img src="safetech.png" class="card-img-top p-2" alt="SafeTech Logo">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">SafeTech</h5>
+                                <p class="card-text">
+                                    Specializing in phone cases and laptop sleeves, SafeTech
+                                    Accessories provides protective and stylish gear that ensures your devices stay safe
+                                    and secure in any environment.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Offcanvas for Cart Content -->
+    <div id="cartOffcanvas" class="offcanvas offcanvas-end" tabindex="-1" aria-labelledby="cartOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 id="cartOffcanvasLabel">Shopping Cart</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- Cart Items will be dynamically inserted here -->
+            <ul id="cartItemsList" class="list-unstyled"></ul>
+
+            <!-- Empty Cart Message (visible when cart is empty) -->
+            <div id="emptyCartMessage" class="text-center">
+                <p>Your cart is empty</p>
+            </div>
+
+            <!-- Total Price (hidden) -->
+            <div id="totalSection" class="d-flex justify-content-between mt-4 d-none">
+                <h6>Total</h6>
+                <span id="totalPrice" class="fw-bold">$0.00</span>
+            </div>
+
+            <!-- Checkout Button (hidden) -->
+            <div id="checkoutSection" class="mt-4 d-none">
+                <a href="checkout.html" class="btn btn-primary w-100" role="button">Proceed to Checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <div class="container">
+            <!-- Copyright & Last Update -->
+            <div class="row justify-content-center mb-3">
+                <div class="col-auto">
+                    <p class="mb-0">&copy; 2025 EDC Shop. All Rights Reserved.</p>
+                </div>
+                <div class="col-auto">
+                    <p class="mb-0">Last Updated: January 2025</p>
+                </div>
+            </div>
+
+            <!-- Contact Email -->
+            <div class="row justify-content-center mb-3">
+                <div class="col-auto">
+                    <p class="mb-0">Contact us:
+                        <a href="mailto:EDCSupport@EDC.com.au" class="text-white">EDCSupport@EDC.com.au</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

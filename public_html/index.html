@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Main Page -->
+
+<head>
+    <!-- Responsive approach for mobile -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="author" content="Ha An Ng">
+    <meta name="description" content="Main Homepage">
+    <title>EDC Mainpage</title>
+
+    <!-- CSS styling with Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="web.css">
+
+    <!-- JavaScript file -->
+    <script src="web.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Area -->
+    <div class="sticky-wrapper">
+        <nav id="stickyNavbar" class="navbar navbar-expand-lg bg-primary text-white p-3 sticky-top"
+            data-bs-theme="dark">
+            <div class="container d-flex justify-content-between align-items-center sticky-top">
+                <!-- Logo and name -->
+                <a class="navbar-brand text-white" href="index.html">
+                    <img src="templogo.webp" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                    EDC Shop
+                </a>
+
+                <!-- Hamburgur nav toggler for when screen size is small -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="toggleNavigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Subcategories -->
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <!-- A way to get the subcategories to align properly to center, TOFIX: -->
+                    <ul class="navbar-nav me-auto"></ul>
+                    <!-- Flex container, center subcategories (Browse and Help) -->
+                    <ul class="navbar-nav mx-auto d-flex justify-content-center mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="help.html">Help</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="about.html">About Us</a>
+                        </li>
+                    </ul>
+
+                    <!-- Right-aligned subcategories (Account and Cart) -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="account.html">Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" data-bs-toggle="offcanvas"
+                                data-bs-target="#cartOffcanvas" aria-controls="staticBackdrop"> Cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Random Product Carousel -->
+    <!-- Simplified Product Image Carousel -->
+    <div id="prodCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#prodCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#prodCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#prodCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="product2.jpg" class="d-block w-100" alt="Multi-Function Smart Wallet">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Multi-Function Smart Wallet</h5>
+                    <p><a class="nav-link active" aria-current="page" href="#product1">View More</a></p>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="product3.jpg" class="d-block w-100" alt="Mini EDC Screwdriver Kit">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mini EDC Screwdriver Kit</h5>
+                    <p><a class="nav-link active" aria-current="page" href="#product2">View More</a></p>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="product4.jpg" class="d-block w-100" alt="Self-Defense Tactical Pen">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Self-Defense Tactical Pen</h5>
+                    <p><a class="nav-link active" aria-current="page" href="#product3">View More</a></p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#prodCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#prodCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- Search Bar -->
+    <div class="row mb-4 mt-4 justify-content-center">
+        <div class="col-8 d-flex justify-content-center">
+            <div class="col-md-8 col-sm-12">
+                <input type="text" class="form-control" placeholder="Search for products...">
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Section -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Filtering Sidebar -->
+            <div class="col-lg-3 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Filter Items</h5>
+
+                        <!-- Categories with Checkboxes enable/disable -->
+                        <h6>Categories</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="category1">
+                            <label class="form-check-label" for="category1">Core EDC</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="category2">
+                            <label class="form-check-label" for="category2">Tech & Electronics</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="category3">
+                            <label class="form-check-label" for="category3">Lifestyle</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="category4">
+                            <label class="form-check-label" for="category3">Survival Gear</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="category5">
+                            <label class="form-check-label" for="category3">Bags and Carry</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="category6">
+                            <label class="form-check-label" for="category3">Novelty</label>
+                        </div>
+                        <hr>
+
+                        <!-- Price Range Dropdown menu -->
+                        <h6>Price Range</h6>
+                        <select class="form-select" aria-label="Select Price Range">
+                            <option selected>Select</option>
+                            <option value="1">$0 - $25</option>
+                            <option value="2">$25 - $75</option>
+                            <option value="3">$75 - $100</option>
+                            <option value="4">$100+</option>
+                        </select>
+
+                        <hr>
+
+                        <!-- Brands with Checkboxes enable/disable -->
+                        <h6>Brands</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="techEdgeBrand">
+                            <label class="form-check-label" for="techEdgeBrand">TechEdge Solutions</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gearUpBrand">
+                            <label class="form-check-label" for="gearUpBrand">GearUp Labs</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="safeTechBrand">
+                            <label class="form-check-label" for="safeTechBrand">SafeTech</label>
+                        </div>
+
+                        <hr>
+
+                        <!-- Rating Dropdown menu -->
+                        <h6>Rating</h6>
+                        <select class="form-select" aria-label="Select Rating">
+                            <option selected>Select</option>
+                            <option value="1">1 Star & Above</option>
+                            <option value="2">2 Stars & Above</option>
+                            <option value="3">3 Stars & Above</option>
+                            <option value="4">4 Stars & Above</option>
+                        </select>
+
+                        <hr>
+
+                        <!-- Apply Filter button -->
+                        <button class="btn btn-primary w-100">Apply Filter</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Section -->
+            <div class="col-lg-9">
+                <!-- Products Grid -->
+                <div class="row" id="productCards">
+                    <!-- Product Cards -->
+                    <!-- Removed the hardcoded product listings, generate product cards using JS -->
+                    <!-- Kept the identification of 'row' in place -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Offcanvas for Cart Content -->
+    <div id="cartOffcanvas" class="offcanvas offcanvas-end" tabindex="-1" aria-labelledby="cartOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 id="cartOffcanvasLabel">Shopping Cart</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- Cart Items will be dynamically inserted here -->
+            <ul id="cartItemsList" class="list-unstyled"></ul>
+
+            <!-- Empty Cart Message (visible when cart is empty) -->
+            <div id="emptyCartMessage" class="text-center">
+                <p>Your cart is empty</p>
+            </div>
+
+            <!-- Total Price (hidden) -->
+            <div id="totalSection" class="d-flex justify-content-between mt-4 d-none">
+                <h6>Total</h6>
+                <span id="totalPrice" class="fw-bold">$0.00</span>
+            </div>
+
+            <!-- Checkout Button (hidden) -->
+            <div id="checkoutSection" class="mt-4 d-none">
+                <a href="checkout.html" class="btn btn-primary w-100" role="button">Proceed to Checkout</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <div class="container">
+            <!-- Copyright & Last Update -->
+            <div class="row justify-content-center mb-3">
+                <div class="col-auto">
+                    <p class="mb-0">&copy; 2025 EDC Shop. All Rights Reserved.</p>
+                </div>
+                <div class="col-auto">
+                    <p class="mb-0">Last Updated: January 2025</p>
+                </div>
+            </div>
+
+            <!-- Contact Email -->
+            <div class="row justify-content-center mb-3">
+                <div class="col-auto">
+                    <p class="mb-0">Contact us:
+                        <a href="mailto:EDCSupport@EDC.com.au" class="text-white">EDCSupport@EDC.com.au</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
